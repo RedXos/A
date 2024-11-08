@@ -1,0 +1,98 @@
+body {
+    background-color: #1b1b2f;
+    color: #e4e4e4;
+    overflow-x: hidden; /* Ocultar el desplazamiento horizontal */
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #1b1b2f;
+    color: #e4e4e4;
+}
+
+.header {
+    background-color: #232535;
+    color: #ffdd00;
+    display: flex;
+    flex-direction: column; /* Cambiar a columna para que el título esté arriba */
+    align-items: center; /* Centrar el contenido horizontalmente */
+}
+.header nav {
+    display: flex; /* Usar flexbox para el nav */
+    margin-top: 10px; /* Espacio entre el título y el nav */
+}
+
+.header nav a {
+    color: #ffdd00;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.card {
+    background-color: #2e2f3e;
+    color: #fff;
+    border: none;
+    transition: transform 0.2s;
+}
+
+.card img {
+    width: 100%; /* Hacer que la imagen ocupe todo el ancho de la tarjeta */
+    height: 200px; /* Establecer una altura fija para las imágenes */
+    object-fit: cover; /* Mantener la proporción y recortar si es necesario */
+    display: block; /* Asegurar que la imagen se comporte como un bloque */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.saga-info {
+    border-left: 5px solid #ffdd00;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    background-color: #2e2f3e;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.banner-left, .banner-right {
+    background-color: #232535;
+    height: 100vh; /* Mantener la altura de la ventana */
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    overflow: hidden;
+    z-index: 1000; /* Asegurar que los banners estén sobre otros elementos */
+}
+
+.banner-left img, .banner-right img {
+    width: 100%; /* Hacer que la imagen ocupe todo el ancho del banner */
+    height: 100%; /* Hacer que la imagen ocupe toda la altura del banner */
+    object-fit: fill; /* Llenar el espacio, distorsionando la imagen */
+    display: block;
+}
+.container {
+    max-width: 100%; /* Eliminar el ancho máximo predeterminado */
+    margin-left: 15%; /* Compensar el espacio del banner izquierdo */
+    margin-right: 15%; /* Compensar el espacio del banner derecho */
+    padding-right: 0; /* Eliminar el padding derecho */
+    padding-left: 0; /* Eliminar el padding izquierdo */
+}
+
+.row {
+    margin-right: 0; /* Eliminar el margen derecho */
+    margin-left: 0; /* Eliminar el margen izquierdo */
+}
+.banner-right {
+    right: 0; /* Fijar en el lado derecho */
+}
+.banner-left {
+    left: 0; /* Fijar en el lado izquierdo */
+}
